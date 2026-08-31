@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профессиональный макияж | Lapkaenrikona|Beauty</title>
+
+    <!-- Иконка вкладки браузера (favicon) -->
+    <link rel="icon" type="image/jpeg" href="assets/images/favicon.jpg">
+
+    <!-- Подключение Google Fonts (шрифты Caveat и Montserrat) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!-- Стили -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Скрипт для мгновенного применения темы (защита от моргания) -->
+    <script>
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    </script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-inner">
+            <a href="#" class="logo">Lapkaenrikona|Beauty</a>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link">Главная</a></li>
+                    <li><a href="#portfolio" class="nav-link">Портфолио</a></li>
+                    <li><a href="#pricing" class="nav-link">Услуги и цены</a></li>
+                    <li><a href="#contacts" class="nav-link">Контакты</a></li>
+                    <li><button class="btn nav-btn booking-trigger">Записаться</button></li>
+                    <li><button class="theme-toggle" aria-label="Переключить тему">🌙</button></li>
+                </ul>
+            </nav>
+
+            <button class="burger" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Секция Hero -->
+        <section id="hero" class="hero">
+            <!-- Силуэты бабочек -->
+            <div class="butterfly b-1"></div>
+            <div class="butterfly b-2"></div>
+            <div class="butterfly b-3"></div>
+            <div class="butterfly b-4"></div>
+            <div class="butterfly b-5"></div>
+            <div class="butterfly b-6"></div>
+            <div class="container hero-content">
+                <h1>Профессиональный макияж</h1>
+                <div class="container">
+                    <div class="hero-grid">
+                        <img src="assets/images/48b02fdb-056d-4d62-af1c-62c36941e596.png" alt="Мастер" class="hero-img">
+                        <div class="hero-text">
+                            <p>Меня зовут Карина, и я делаю макияж, который невозможно пролистнуть в ленте.</p>
+                            <p>Яркие, креативные, немного безумные мейки — моя стихия. Я не про «лёгкий нюд на каждый
+                                день». Я про цвет, фактуру, дерзость и ту самую эмоцию, когда смотришь в зеркало и
+                                говоришь: «Вау, это я?»</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="booking-btn" class="btn booking-trigger">Записаться онлайн</button>
+            </div>
+        </section>
+
+        <!-- Секция Портфолио -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2>Мои работы</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="assets/images/portfolio/IMG_20251120_124749.jpg"
+                            alt="Креативный макияж для фотосессии" class="portfolio-img">
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/images/portfolio/IMG_20251120_181937.jpg"
+                            alt="Креативный макияж для фотосессии" class="portfolio-img">
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/images/portfolio/IMG_20251116_114639_294.jpg"
+                            alt="Креативный макияж для фотосессии" class="portfolio-img">
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/images/portfolio/IMG_20251124_193350.jpg"
+                            alt="Креативный макияж для фотосессии" class="portfolio-img">
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/images/portfolio/IMG_20251118_195610.jpg"
+                            alt="Креативный макияж для фотосессии" class="portfolio-img">
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/images/portfolio/1001090288.jpg" alt="Креативный макияж для фотосессии"
+                            class="portfolio-img">
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/images/portfolio/IMG_20251116_114555_714.jpg"
+                            alt="Креативный макияж для фотосессии" class="portfolio-img">
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/images/portfolio/IMG_20251124_180052.jpg"
+                            alt="Креативный макияж для фотосессии" class="portfolio-img">
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/images/portfolio/IMG_20251116_185633.jpg"
+                            alt="Креативный макияж для фотосессии" class="portfolio-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция Прайс-лист -->
+        <section id="pricing" class="pricing">
+            <div class="container">
+                <h2>Услуги и цены</h2>
+                <div class="pricing-cards">
+                    <div class="pricing-card">
+                        <h3>Вечерний макияж</h3>
+                        <div class="desc">
+                            <p>Создам выразительный и стойкий образ для твоего особенного вечера. Подберу палитру и
+                                технику с учётом освещения, дресс-кода и твоих пожеланий — от элегантной классики до
+                                смелых акцентов.</p>
+                            <!-- <p>В работу входит: подготовка кожи, моделирование тона, скульптурирование, макияж глаз, губ
+                                и фиксация. Использую профессиональную косметику премиум-сегмента.</p>
+                            <p>⏱ 1,5-2 часа<br>💄 Стойкость до 10–12 часов</p>
+                            <p>Возьми с собой фото желаемого образа или референс — так результат будет максимально
+                                точным. Жду тебя! ✨</p> -->
+                        </div>
+                        <h3>2500 RUB</h3>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h3>Макияж для фотосессии</h3>
+                        <div class="desc">
+                            <p>Камера видит всё — и я сделаю так, чтобы она увидела тебя в самом мощном свете. Работаю
+                                на стыке бьюти и арт-визажа: насыщенные пигменты, графика, нестандартные текстуры,
+                                смелые цветовые решения. Никаких «безопасных nude», если хочешь кадр, от которого
+                                невозможно отвести взгляд.</p>
+                            <!-- <p>В работу входит:<br>
+                                — проработка кожи с учётом HD-съёмки и ретуши<br>
+                                — стойкая прорисовка деталей, которые «читаются» в объективе<br>
+                                — фиксация на весь съёмочный день</p>
+                            <p>⏱ Время зависит от сложности работы<br>
+                                📸 Пришли мудборд, референсы или идею — соберу образ под твой концепт<br>
+                                🎨 Открыта к экспериментам: стразы, глиттер, нестандартные формы, цветовые блоки</p>
+                            <p>Давай сделаем не «красиво», а незабываемо. 🔥</p> -->
+
+                        </div>
+                        <h3>От 3000 RUB</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Секция Контакты -->
+    <footer id="contacts" class="footer">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>Lapkaenrikona|Beauty</h3>
+                <button class="btn booking-trigger" style="margin-top: 20px;">Записаться онлайн</button>
+            </div>
+            <div class="footer-contacts">
+                <p>Телефон: <a href="tel:+79606140368">+7 (960) 614-03-68</a></p>
+            </div>
+            <div class="footer-socials">
+                <a href="https://vk.ru/lapkaenrikona.beauty" class="social-link" target="_blank"
+                    rel="noopener noreferrer">VK</a>
+                <a href="https://t.me/lapkaenrikona" class="social-link" target="_blank"
+                    rel="noopener noreferrer">Telegram</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Всплывающий виджет для онлайн-записи (DIKIDI) -->
+    <div id="booking-modal" class="lightbox">
+        <div class="booking-modal-content">
+            <span class="booking-close" aria-label="Закрыть">&times;</span>
+            <iframe src="https://dikidi.ru/2128968?p=0.pi-ssm" frameborder="0" width="100%" height="100%"></iframe>
+        </div>
+    </div>
+
+    <!-- Модальное окно для лайтбокса (Портфолио) -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close" aria-label="Закрыть">&times;</span>
+        <button class="lightbox-nav lightbox-prev" aria-label="Предыдущее фото">&#10094;</button>
+        <img class="lightbox-content" id="lightbox-img" src="" alt="Увеличенное изображение работы">
+        <button class="lightbox-nav lightbox-next" aria-label="Следующее фото">&#10095;</button>
+    </div>
+
+    <!-- Скрипты -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
